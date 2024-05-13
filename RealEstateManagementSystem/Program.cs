@@ -8,7 +8,7 @@ namespace RealEstateManagementSystem
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new MainPage());
+            Application.Run(new Login());
         }
     }
 }
