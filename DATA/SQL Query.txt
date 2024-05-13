@@ -1,0 +1,26 @@
+Data Source= ;Initial Catalog== ;Integrated Security=True;Encrypt=False
+
+
+create table Hudud(
+	HududId int primary key identity(1, 1) not null,
+	HududNomi varchar(50) not null
+);
+
+create table Tashkilot(
+	TashkilotId int primary key identity(1, 1) not null,
+	TashkilotNomi varchar(50) not null
+);
+
+create table MulkTuri(
+	MulkTuriId int primary key identity(1, 1) not null,
+	MulkTuriNomi varchar(50) not null
+);
+
+create table Mulk(
+	MulkId int primary key identity(1, 1) not null,
+	MulkTuriId int,
+	Tasnif varchar(100),
+	HududId int,
+	TashkilotId int,
+	Narxi money
+);
